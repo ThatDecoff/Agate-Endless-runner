@@ -27,7 +27,7 @@ public class ScoreController : MonoBehaviour
     {
         currentScore += increment;
 
-        if (currentScore - lastScoreHighlight > scoreHighlightRange)
+        if (currentScore - lastScoreHighlight >= scoreHighlightRange)
         {
             sound.PlayScoreHighlight();
             lastScoreHighlight += scoreHighlightRange;

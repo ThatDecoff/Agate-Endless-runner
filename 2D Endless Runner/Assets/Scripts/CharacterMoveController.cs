@@ -42,6 +42,8 @@ public class CharacterMoveController : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sound = GetComponent<CharacterSoundController>();
+
+        lastPositionX = transform.position.x;
     }
 
     private void Update()
